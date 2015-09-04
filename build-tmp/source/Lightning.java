@@ -40,10 +40,8 @@ public void draw()
 	line(startX,startY,endX,endY);
 	stroke(((int)(Math.random()*256)),((int)(Math.random()*256)),((int)(Math.random()*256)));
 	line(startX,startY+20,endX,endY+20);
-	stroke(((int)(Math.random()*256)),((int)(Math.random()*256)),((int)(Math.random()*256)));
+	stroke(((int)(Math.random()*150)),((int)(Math.random()*150)),((int)(Math.random()*0)));
 	line(startX,startY+40,endX,endY+40);
-	startY=startY+20;
-	endY=endY+20;
 
 	startX=endX;
 	startY=endY;
@@ -52,8 +50,6 @@ public void draw()
 }
 public void mousePressed()
 {
-	fill(100,100,100);
-rect(20,30,40,50);
 startX=0;
 startY=150;
 endX=0;
