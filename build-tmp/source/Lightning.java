@@ -22,10 +22,10 @@ int endY=150;
 public void setup()
 {
   size(300,300);
-  //strokeWeight(6);
-  noLoop();
-
+  strokeWeight(3);
+ noLoop();
 }
+
 public void draw()
 {
 	stroke(((int)(Math.random()*256)),((int)(Math.random()*256)),((int)(Math.random()*256)));
@@ -42,12 +42,21 @@ public void draw()
 	line(startX,startY+20,endX,endY+20);
 	stroke(((int)(Math.random()*150)),((int)(Math.random()*150)),((int)(Math.random()*0)));
 	line(startX,startY+40,endX,endY+40);
-
 	startX=endX;
 	startY=endY;
+	fill(0,0,100);
+	noStroke();
+	ellipse(10,0,80,80);
+	ellipse(60,0,80,80);
+	ellipse(110,0,80,80);
+	ellipse(160,0,80,80);
+	ellipse(210,0,80,80);
+	ellipse(260,0,80,80);
+	
 	}
-
 }
+
+
 public void mousePressed()
 {
 startX=0;
