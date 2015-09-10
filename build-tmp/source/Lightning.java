@@ -36,7 +36,7 @@ public void draw()
 	{
 	endX = startX + (int)(Math.random()*10);
 	endY = startY + ((int)(Math.random()*19))-9;
-	System.out.println(endX);
+	
 	line(startX,startY,endX,endY);
 	stroke(((int)(Math.random()*256)),((int)(Math.random()*256)),((int)(Math.random()*256)));
 	line(startX,startY+20,endX,endY+20);
